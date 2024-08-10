@@ -1,0 +1,156 @@
+body{
+    margin:  0px;
+    padding: 0px;
+    background: url('brown-room.jpg') ;
+    /* background-size: 100%; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 800px;
+    color: rgb(192, 240, 206);
+}
+
+.navbar li{
+    font-size: 30px;
+    display: inline-block;
+    margin: 22px 103px;
+    padding: 19px 14px
+    
+    
+ }
+ .navbar li a{
+    color: white;
+    text-decoration: none;
+    padding: 30px;
+    /* transition: transform 0.5s ease; */
+ }
+ .navbar li a:hover{
+    /* text-decoration: underline; */
+    color: rgb(9, 8, 8);
+    /* border: 2px solid black; */
+    /* border-radius: 2px; */
+    /* background-color: #f0a82c; */
+    /* transform: scale(1.2); */
+
+
+ }
+ .heading{
+    margin: 20px 351px;
+    /* border: 2px solid black; */
+    text-align: center;
+    font-size: 33px;
+ }
+ .img{
+    height: 211px;
+    width: 315px;
+    margin: -49px 64px;
+    padding: 19px 16px;
+    transition: transform 0.5s ease;
+ }
+ .img1{
+        height: 211px;
+    width: 315px;
+    margin: -201px 480px;
+    padding: 19px 16px;
+    transition: transform 0.5s ease;
+ }
+ .img2{
+        height: 211px;
+    width: 315px;
+    margin: -201px 934px;
+    padding: 19px 16px;
+    transition: transform 0.5s ease;
+ }
+ 
+
+
+.img:hover ,.img1:hover,.img2:hover {
+transform: scale(1.2); /* Scale the image up on hover */
+}
+.side{
+    height: 100%;
+    width: 250px;
+    background-color: #f0a82c;
+    position: absolute;
+    z-index: 1;
+    margin: -18px 0px;
+    transition: 0.5s ease;
+    transform: translateX(-250px);
+}
+.side .head{
+    color:rgb(255, 238, 206);
+    font-size: 30px;
+    font-weight: bold;
+    padding: 2px;
+    text-align: center;
+    background: rgb(138, 76, 18);
+    margin: 0px 0px;
+    letter-spacing: 2px;
+}
+ol{
+    width: 100%;
+    list-style: none;
+}
+ol li{
+    width: 100%;
+    display: block;
+    margin-left: -40px;
+
+}
+ol li a{
+    /* margin: 10px 10px; */
+    color: rgb(55, 51, 14);
+
+    padding: 10px 10px;
+    text-decoration: none;
+    display: block;
+    font-size: 22px;
+    position: relative;
+    letter-spacing: 1px;
+    transition: 0.3s ;
+    overflow: hidden;
+    text-transform: capitalize;
+}
+ol li a i{
+    width: 30px;
+    padding-left: 30px;
+    text-align: center;
+    font-size: 25px;
+}
+ol li:hover a{
+    color: rgb(4, 4, 1);
+    letter-spacing: 5px;
+    /* border: 2px aqua solid; */
+    /* border-radius: 2px 2px; */
+
+}
+input{
+    visibility: hidden;
+    display: none;
+}
+span{
+    margin: -25px 0px;
+    position: absolute;
+    right: -40px;
+    top: 30px;
+    font-size: 25px;
+    border-radius: 3px;
+    color: rgb(240, 228, 121);
+    cursor: pointer;
+    background-color: black;
+    padding: 3px 8px;
+    transition: transform 0.2s ease;
+}
+span:hover{
+    transform: scale(1.2);
+    background-color: rgb(245, 214, 59);
+    color: brown;
+
+}
+
+
+ #check:checked ~.side{
+    transform: translateX(0);
+ }
+ #check:checked ~.side #bars{
+    display: none;
+ }

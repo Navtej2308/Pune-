@@ -1,0 +1,104 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+</head>
+<style>
+     body{
+
+margin:  0px;
+padding: 0px;
+background: url('brown-room.jpg');
+background-size: 100%;
+background-repeat: no-repeat;
+height: 800px;
+color: white;
+
+
+}
+.btn{
+        margin: 0px 9px;
+        color: white;
+        background-color: black;
+        padding: 5px 5px;
+        border: 2px  solid grey;
+        border-radius: 10px;
+        font-size: 20px;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+     }
+     .btn:hover{
+        background-color: grey;
+        transform: scale(1.2);
+     }
+
+     .container{
+        
+        display: inline-block;
+        margin: -8px 398px;
+        padding: 51px 2px;
+        width: 33%;
+        border-radius: 39px;
+        text-align: center;
+        
+     }
+     .form input{
+        text-align: center;
+        display: block;
+        width: 450px;
+        height:55px;
+        border: 2px solid rgb(9, 8, 8);
+        border-radius: 2px 2px;
+         font-size: 15px;
+        color: rgb(147, 59, 4);
+        background-color: rgb(255, 214, 79);
+        padding: 9px;
+        margin: 14px auto;
+        /* border-radius: 2px 2px 2px 2px; */
+     }
+     .form textarea{
+        text-align: center;
+        display: block;
+        width: 450px;
+        height:55px;
+        border: 2px solid rgb(9, 8, 8);
+        border-radius: 2px 2px;
+         font-size: 17px;
+        color: rgb(147, 59, 4);
+        background-color: rgb(255, 214, 79);
+        padding: 9px;
+        margin: 14px auto;
+
+     }
+</style>
+<body>
+    <!-- <h1>Form</h1> -->
+    <div class="container">
+        <h1>
+         Contact us
+        </h1>
+        <form action="/contact"  method="post" id="contact">
+             <div class="form">
+                 <input type="text" name="name" id="name" placeholder="Enter your name">
+             </div>
+             <div class="form">
+                 <input type="text"  name="age" id="age"placeholder="Enter your age">
+             </div>
+           <div class="form">
+                 <input type="text" name="phone" id="phone" placeholder="Enter your Contact no">
+             </div>
+             <div class="form">
+                 <input type="text"  name="email" id="email"placeholder="Enter your Email">
+             </div>
+             <div class="form">
+                <textarea name="place" id="place" cols="30" rows="10" placeholder="Places you want to visit "></textarea>
+
+            </div>
+             
+ 
+             <button class="btn">Submit</button>
+        </form>
+     </div>
+</body>
+</html>
